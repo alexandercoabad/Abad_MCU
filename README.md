@@ -4,9 +4,13 @@
 
 An 8-bit MCU based on Michael Bell's TinyQV
 
-## What is Tiny Tapeout?
+## Layout
+<img width="433" height="650" alt="Screenshot 2026-08-18 at 7 21 51 AM" src="https://github.com/user-attachments/assets/f3d354a8-6bd7-4731-8398-76518050c79c" />
 
-Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital and analog designs manufactured on a real chip.
+<img width="433" height="650" alt="Abad_MCU_2D" src="https://github.com/user-attachments/assets/bfe5151d-267a-49bc-934f-50fcd4766a82" />
+
+3D link: https://gds-viewer.tinytapeout.com/?model=https://alexandercoabad.github.io/Abad_MCU/tinytapeout.oas&pdk=ihp-sg13g2
+
 
 To learn more and get started, visit https://tinytapeout.com.
 

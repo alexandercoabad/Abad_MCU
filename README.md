@@ -1,8 +1,8 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
-# Tiny Tapeout Verilog Project Template
+# Abad MCU
 
-- [Read the documentation for project](docs/info.md)
+An 8-bit MCU based on Michael Bell's TinyQV
 
 ## What is Tiny Tapeout?
 

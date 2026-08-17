@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+An 8-bit MCU based on Michael Bell's TinyQV
 
 ## How to test
 
-Explain how to use your project
+An 8-bit MCU based on Michael Bell's TinyQV
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+demoboard

@@ -27,7 +27,7 @@ exhaustively verified for every entry).
 
 ### SkyWater SKY130 PDK
 The standard-cell library your design was synthesized and hardened
-against.
+against (sky130A shuttle).
 
 ```
 Copyright 2020 SkyWater PDK Authors
@@ -38,6 +38,23 @@ You may obtain a copy of the License at
     http://www.apache.org/licenses/LICENSE-2.0
 ```
 Source: https://github.com/google/skywater-pdk
+
+### IHP SG13G2 Open PDK
+The standard-cell library your design was **also** synthesized and
+hardened against for the IHP shuttle (confirmed via `sg13g2_stdcell`
+cells in the actual synthesized netlist and the `ihp-sg13g2` floorplan
+template - a genuinely different foundry and PDK from SkyWater, not a
+variant of it).
+
+```
+Copyright 2024 IHP PDK Authors
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    https://www.apache.org/licenses/LICENSE-2.0
+```
+Source: https://github.com/IHP-GmbH/IHP-Open-PDK
 
 ### open_pdks
 PDK build/installer tooling used to assemble the sky130 PDK for the
@@ -133,7 +150,13 @@ RISC-V trademark/logo.
   verify the exact figure and its origin before citing it as a
   TinyQV-derived fact.
 - The Apache-2.0 NOTICE-file check above was only performed for
-  skywater-pdk; confirm the other three Apache-2.0 entries (open_pdks,
-  OpenLane, Tiny Tapeout templates) don't ship their own NOTICE files
-  before finalizing this document, since if any of them do, its
-  contents would need to be reproduced here per \u00a74(d).
+  skywater-pdk; confirm the other Apache-2.0 entries (open_pdks,
+  OpenLane, Tiny Tapeout templates, and now IHP-Open-PDK) don't ship
+  their own NOTICE files before finalizing this document, since if any
+  of them do, its contents would need to be reproduced here per
+  \u00a74(d).
+- The IHP hardening run's hold-timing margin (worst case +0.12ns in the
+  nom_fast_1p32V_m40C corner) is real but thin compared to the sky130
+  run's worst case (+0.90ns). Both pass, but this is worth tracking if
+  the design changes at all - re-run signoff rather than assume the
+  margin holds after any RTL edit.
